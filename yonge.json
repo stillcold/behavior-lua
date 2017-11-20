@@ -1,0 +1,129 @@
+{
+  "id": "2f743341-c710-4e2b-88ff-da1b067901c1",
+  "title": "A behavior tree",
+  "description": "",
+  "root": "ac68fb0c-2278-4593-9b4b-fec7aa5b0409",
+  "properties": {},
+  "nodes": {
+    "ac68fb0c-2278-4593-9b4b-fec7aa5b0409": {
+      "id": "ac68fb0c-2278-4593-9b4b-fec7aa5b0409",
+      "name": "Sequence",
+      "title": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -84,
+        "y": -12
+      },
+      "children": [
+        "2727a07f-8332-4dac-95c7-193ad3ffd332",
+        "ac904a5e-0da0-48e5-8f78-d0a34ce58093",
+        "ebaaf506-f159-464c-87b6-f701bf218b13",
+        "20f4f5d8-4870-4cb6-b209-381634d03cf9",
+        "75ee2d78-7ac9-4c37-92c8-98eb2fbf0f9b"
+      ]
+    },
+    "2727a07f-8332-4dac-95c7-193ad3ffd332": {
+      "id": "2727a07f-8332-4dac-95c7-193ad3ffd332",
+      "name": "Checker",
+      "title": "If I can speak",
+      "description": "",
+      "properties": {
+        "cond": "true"
+      },
+      "display": {
+        "x": 120,
+        "y": -192
+      }
+    },
+    "ac904a5e-0da0-48e5-8f78-d0a34ce58093": {
+      "id": "ac904a5e-0da0-48e5-8f78-d0a34ce58093",
+      "name": "Repeater",
+      "title": "Repeat <maxLoop>x",
+      "description": "",
+      "properties": {
+        "maxLoop": 3
+      },
+      "display": {
+        "x": 120,
+        "y": -108
+      },
+      "child": "411fcf08-b012-46d9-8c90-a419e0be7cfb"
+    },
+    "411fcf08-b012-46d9-8c90-a419e0be7cfb": {
+      "id": "411fcf08-b012-46d9-8c90-a419e0be7cfb",
+      "name": "DoSay",
+      "title": "DoSay(\"鹅\")",
+      "description": "",
+      "properties": {
+        "content": "鹅"
+      },
+      "display": {
+        "x": 336,
+        "y": -108
+      }
+    },
+    "ebaaf506-f159-464c-87b6-f701bf218b13": {
+      "id": "ebaaf506-f159-464c-87b6-f701bf218b13",
+      "name": "DoSay",
+      "title": "DoSay(\"曲项向天歌\")",
+      "description": "",
+      "properties": {
+        "content": "曲项向天歌"
+      },
+      "display": {
+        "x": 120,
+        "y": -12
+      }
+    },
+    "20f4f5d8-4870-4cb6-b209-381634d03cf9": {
+      "id": "20f4f5d8-4870-4cb6-b209-381634d03cf9",
+      "name": "DoSay",
+      "title": "DoSay(\"白毛浮绿水\")",
+      "description": "",
+      "properties": {
+        "content": "白毛浮绿水"
+      },
+      "display": {
+        "x": 120,
+        "y": 72
+      }
+    },
+    "75ee2d78-7ac9-4c37-92c8-98eb2fbf0f9b": {
+      "id": "75ee2d78-7ac9-4c37-92c8-98eb2fbf0f9b",
+      "name": "DoSay",
+      "title": "DoSay(\"红掌拨清波\")",
+      "description": "",
+      "properties": {
+        "content": "红掌拨清波"
+      },
+      "display": {
+        "x": 120,
+        "y": 156
+      }
+    }
+  },
+  "display": {
+    "camera_x": 683,
+    "camera_y": 331,
+    "camera_z": 1,
+    "x": -288,
+    "y": -12
+  },
+  "custom_nodes": [
+    {
+      "name": "DoSay",
+      "category": "action",
+      "title": "DoSay",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "name": "Checker",
+      "category": "condition",
+      "title": "Check",
+      "description": null,
+      "properties": {}
+    }
+  ]
+}
