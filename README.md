@@ -9,5 +9,5 @@ A very simple version BT in lua.
 - 运行
 	- cd pathto behavior-lua
 	- lua main.lua
-
-- 如须转载或使用,请联系 mr_kernel@163.com 寻求许可
+- 协议
+	- 如须转载或使用,请联系 mr_kernel@163.com 寻求许可
